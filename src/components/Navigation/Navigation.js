@@ -15,8 +15,8 @@ const Navigation = () => {
                         Pizzeria
                     </Typography>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1}} className='nav'>
-                        <NavLink to='/' exact activeStyle={{ color: '#c6cacc' }}>Orders</NavLink>
-                        <NavLink to='/dishes' activeStyle={{ color: '#c6cacc' }}>Dishes</NavLink>
+                        <NavLink to='/'exact activeStyle={{ color: '#c6cacc' }}>Dishes</NavLink>
+                        <NavLink to='/orders' activeStyle={{ color: '#c6cacc' }}>Orders</NavLink>
                     </Typography>
                 </Toolbar>
             </AppBar>

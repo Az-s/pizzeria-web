@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation';
 import Orders from './components/Orders/Orders';
 import Dishes from './components/Dishes/Dishes';
+import AddPizza from './components/AddPizza/AddPizza';
+import EditPizza from './EditPizza/EditPizza';
 import './App.css';
 
 function App() {
@@ -10,8 +12,10 @@ function App() {
     <div className="App">
       <Router>
         <Navigation />
-        <Route exact path='/' component={Orders} />
-        <Route path='/dishes' component={Dishes} />
+        <Route exact path='/' component={Dishes} />
+        <Route path='/orders' component={Orders} />
+        <Route path='/add-dishes' component={AddPizza} />
+        <Route path='/:id/edit' component={EditPizza} />
       </Router>
     </div>
   );
